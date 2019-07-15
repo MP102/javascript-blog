@@ -38,12 +38,6 @@ function titleClickHandler(event) {
 
 }
 
-const links = document.querySelectorAll('.titles a');
-
-for (let link of links) {
-    link.addEventListener('click', titleClickHandler);
-}
-
 
 const optArticleSelector = '.post',
     optTitleSelector = '.post-title',
@@ -93,4 +87,8 @@ function generateTitleLinks() {
 
 generateTitleLinks();
 
-
+const links = document.querySelectorAll('.titles a');
+console.log(links);
+for (let link of links) {
+    link.addEventListener('click', titleClickHandler);
+}
